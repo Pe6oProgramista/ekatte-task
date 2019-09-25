@@ -1,0 +1,22 @@
+{
+  "name": "ekatte-task",
+  "version": "1.0.0",
+  "description": "EKATTE Task",
+  "main": "importData.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pe6oProgramista/ekatte-task.git"
+  },
+  "author": "Peter Milev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pe6oProgramista/ekatte-task/issues"
+  },
+  "homepage": "https://github.com/Pe6oProgramista/ekatte-task#readme",
+  "devDependencies": {
+    "pg": "^7.12.1"
+  }
+}
