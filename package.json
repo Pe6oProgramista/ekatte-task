@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Pe6oProgramista/ekatte-task#readme",
   "devDependencies": {
-    "pg": "^7.12.1"
+    "pg": "^7.12.1",
+    "xlsx": "^0.15.1"
   }
 }
