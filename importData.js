@@ -8,6 +8,13 @@ const client = new Client({
   port: 5432,
 });
 
-await client.connect();
-const res = await client.query('SELECT NOW()');
-await client.end();
+async function main() {
+  await client.connect();
+  const res = await client.query('SELECT NOW()');
+  await client.end();
+  
+  console.log(res)
+  return 0;
+}
+
+main();
