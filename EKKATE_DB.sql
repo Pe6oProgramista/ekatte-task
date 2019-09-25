@@ -15,19 +15,20 @@ CREATE TABLE "obstina" (
   "oblast" varchar
 );
 
+CREATE TABLE "kind" (
+  "id" SERIAL PRIMARY KEY UNIQUE NOT NULL,
+  "kind" varchar UNIQUE,
+  "t_v_m" varchar
+);
+
 CREATE TABLE "atte" (
   "id" SERIAL PRIMARY KEY UNIQUE NOT NULL,
-  "ekatte" varchar,
+  "ekatte" varchar UNIQUE,
   "name" varchar,
   "obstina" varchar,
   "kind" varchar
 );
 
-CREATE TABLE "kind" (
-  "id" SERIAL PRIMARY KEY UNIQUE NOT NULL,
-  "kind" varchar UNIQUE,
-  "tvm" varchar
-);
 ALTER TABLE "obstina" ADD FOREIGN KEY ("oblast") REFERENCES "oblast" ("oblast");
 
 ALTER TABLE "atte" ADD FOREIGN KEY ("obstina") REFERENCES "obstina" ("obstina");
